@@ -1,0 +1,141 @@
+/* .navbartext {
+    color: white;
+    margin: 10px 20px;
+    text-decoration: none;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    text-transform: uppercase;
+} */
+
+.main{
+    width: 100%;
+    margin-top: 20px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.navbartext {
+    padding: 0.8em 1.8em;
+    margin: 10px 10px;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .4s;
+    border-radius: 20px;
+    z-index: 1;
+    font-family: inherit;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbartext::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: white;
+    transition: .6s ease;
+    display: block;
+    z-index: -1;
+}
+
+.navbartext:hover::before {
+    width: 105%;
+}
+
+.navbartext:hover {
+    color: #111;
+}
+
+.navbar {
+    display: flex;
+    margin-left: 40px;
+    justify-content: center;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 20px 10px;
+    opacity: 0;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.nav-link {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: medium;
+}
+
+.bi {
+    font-size: 20px;
+}
+
+
+.nav-item:nth-child(odd) {
+    transform: translateY(5rem);
+}
+
+.nav-item:nth-child(even) {
+    transform: translateY(-5rem);
+}
+
+.nav:hover .nav-item {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.bi {
+    padding: 10px;
+    transition: all 0.3s;
+    background-color: white;
+    border-radius: 50%;
+    color: black;
+}
+
+.bi:hover {
+
+    color: white;
+}
+
+#insta:hover {
+    background-color: red;
+}
+
+#face:hover {
+    background-color: darkblue;
+}
+
+#git:hover {
+    background-color: green;
+}
+
+#ld:hover {
+    background-color: darkblue;
+}
+
+.sm-header {
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 10px 40px 0px;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    color: white;
+}

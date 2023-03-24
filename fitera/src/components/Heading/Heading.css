@@ -1,0 +1,22 @@
+.mainheading{
+    width: 100%;
+    text-align: center;
+}
+
+.text {
+    font-family: 'Roboto', sans serif;
+    display: inline-block;
+    box-sizing: border-box;
+    color: white;
+    font-size: 35px;
+    margin: 10px;
+    letter-spacing: 1px;
+    transition: all;
+    text-decoration: none;
+}
+
+.text:hover {
+    cursor: pointer;
+    transition-duration: 0.5s;
+    transform: scale(1.2);
+}
