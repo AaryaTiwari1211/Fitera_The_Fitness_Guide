@@ -22,8 +22,8 @@ function Navbar() {
     }
     const SocialMedia = ({ icon }) => {
         return (
-            <li class="nav-item">
-                <a href="#" class="nav-link">{icon}</a>
+            <li className="nav-item">
+                <a href="#" className="nav-link">{icon}</a>
             </li>
         )
     }
@@ -32,7 +32,7 @@ function Navbar() {
     }
     return (
         <div>
-            <div class='main'>
+            <div className='main'>
                 <div className='navbar'>
                     <NavbarItem text='Home' to='/' />
                     <NavbarItem text='Login' to='/login' />
@@ -40,13 +40,13 @@ function Navbar() {
                     <NavbarItem text='Blog' to='/blog' />
                     <NavbarItem text='Contact Us' to='/contactus' />
                     <NavbarItem text='Membership' to='/membership' />
-                    <nav class="nav">
-                        <h4 class="sm-header" id='header'>Follow us on</h4>
-                        <ul class="nav-list">
-                            <SocialMedia icon={<i class="bi bi-instagram" id='insta'></i>} />
-                            <SocialMedia icon={<i class="bi bi-facebook" id='face'></i>} />
-                            <SocialMedia icon={<i class="bi bi-github" id='git'></i>} />
-                            <SocialMedia icon={<i class="bi bi-linkedin" id='ld'></i>} />
+                    <nav className="nav">
+                        <h4 className="sm-header" id='header'>Follow us on</h4>
+                        <ul className="nav-list">
+                            <SocialMedia icon={<i className="bi bi-instagram" id='insta'></i>} />
+                            <SocialMedia icon={<i className="bi bi-facebook" id='face'></i>} />
+                            <SocialMedia icon={<i className="bi bi-github" id='git'></i>} />
+                            <SocialMedia icon={<i className="bi bi-linkedin" id='ld'></i>} />
                         </ul>
                     </nav>
                 </div>
@@ -55,24 +55,24 @@ function Navbar() {
                 {
                     collapse ? (
                         <div className='sidebarlist'>
-                            <i class="bi bi-list" id='hamburger'></i>
+                            <i className="bi bi-list" id='hamburger'></i>
                         </div>
                     ) : (
                         <div className='sidebarlist'>
-                            <i class="bi bi-list" id='hamburger'></i>
+                            <i className="bi bi-list" id='hamburger'></i>
                             <SidebarItem text='Home' to='/' />
                             <SidebarItem text='Login' to='/login' />
                             <SidebarItem text='Signup' to='/signup' />
                             <SidebarItem text='Blog' to='/blog' />
                             <SidebarItem text='Contact Us' to='/contactus' />
                             <SidebarItem text='Membership' to='/membership' />
-                            <nav class="nav">
-                                <h4 class="sm-header" id='header'>Follow us on</h4>
-                                <ul class="nav-list">
-                                    <SocialMedia icon={<i class="bi bi-instagram" id='insta'></i>} />
-                                    <SocialMedia icon={<i class="bi bi-facebook" id='face'></i>} />
-                                    <SocialMedia icon={<i class="bi bi-github" id='git'></i>} />
-                                    <SocialMedia icon={<i class="bi bi-linkedin" id='ld'></i>} />
+                            <nav className="nav">
+                                <h4 className="sm-header" id='header'>Follow us on</h4>
+                                <ul className="nav-list">
+                                    <SocialMedia icon={<i className="bi bi-instagram" id='insta'></i>} />
+                                    <SocialMedia icon={<i className="bi bi-facebook" id='face'></i>} />
+                                    <SocialMedia icon={<i className="bi bi-github" id='git'></i>} />
+                                    <SocialMedia icon={<i className="bi bi-linkedin" id='ld'></i>} />
                                 </ul>
                             </nav>
                         </div>
