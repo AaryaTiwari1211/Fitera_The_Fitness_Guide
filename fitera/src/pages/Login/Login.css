@@ -1,7 +1,7 @@
 .main-login {
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    margin: 100px;
+    margin: 75px;
     justify-content: space-around;
     background-color: white;
     width: 30%;
@@ -50,5 +50,12 @@
 .input:focus {
     border-top-width: 0.2em;
     background-color: #f1e8e8;
+}
+
+.signup-link{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: smaller;
+    text-decoration: none;
 }
 

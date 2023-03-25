@@ -6,11 +6,10 @@
 }
 
 .App {
-    background: url(/gym2.jpeg) no-repeat center center fixed;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background: url(/gym2.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
     background-size: cover;
     min-width: 600px;
     width: 100%;
