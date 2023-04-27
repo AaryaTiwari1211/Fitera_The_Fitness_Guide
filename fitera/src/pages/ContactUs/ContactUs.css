@@ -1,0 +1,117 @@
+.contact{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    align-items:flex-start;
+}
+
+.contact-right{
+    display:flex;
+    flex-direction:column;
+    margin-top:60px;
+}
+
+.contact-right-text{
+    margin:10px
+}
+
+.main-contact {
+    font-family: 'Poppins', sans-serif;
+    margin: 75px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 40px;
+}
+
+.contact-text {
+    padding-top: 20px;
+}
+
+.contact-left{
+    display:flex;
+    flex-direction:column;
+}
+
+.form-row{
+    display:flex;
+    flex-direction:row;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right {
+    text-align: center;
+}
+
+.contact-message{
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 1em;
+    background-color: #ccc;
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: 300ms ease-in-out;
+}
+.contact-message:focus {
+    background-color: #24403cd1;
+    color:#caf8f3;
+    transform: scale(1.05);
+    box-shadow: 13px 13px 100px #969696,
+                -13px -13px 100px #ffffff;
+}
+
+.contact-input:focus::placeholder{
+    color:#fff;
+}
+
+.contact-message:focus::placeholder{
+    color:#fff;
+}
+
+.contact-input {
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    margin:15px;
+    padding: 1em;
+    background-color: #ccc;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+    transition: 300ms ease-in-out;
+}
+
+.contact-input:focus {
+    background-color: #24403df1;
+    color:#caf8f3;
+    transform: scale(1.05);
+    box-shadow: 13px 13px 100px #969696,
+                -13px -13px 100px #ffffff;
+}
+
+.signup-link {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: smaller;
+    text-decoration: none;
+}
+
+@media (max-width:1200px)
+{
+    .main-contact
+    {
+        width:80%;
+    }
+    .contact
+    {
+        flex-direction:column-reverse;
+        justify-content:center;
+        align-items:center;
+    }
+}

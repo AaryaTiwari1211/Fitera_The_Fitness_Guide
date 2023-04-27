@@ -4,7 +4,8 @@
 }
 
 .text {
-    font-family: 'Roboto', sans serif;
+    font-family: 'Sigmar', cursive;
+    text-transform:uppercase;
     display: inline-block;
     box-sizing: border-box;
     color: white;

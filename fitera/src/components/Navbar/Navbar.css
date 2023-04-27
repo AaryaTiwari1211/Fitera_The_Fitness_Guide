@@ -50,6 +50,7 @@
     display: flex;
     margin-left: 40px;
     justify-content: center;
+    align-items: center;
 }
 
 .nav {

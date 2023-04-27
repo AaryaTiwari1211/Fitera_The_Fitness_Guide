@@ -1,10 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     height: 100%;
 }
-
 .App {
     background: url(/gym2.jpeg);
     background-position: center;
@@ -17,4 +15,10 @@
     height: auto;
     top: 0;
     left: 0;
+}
+
+@media (max-width: 768px) {
+    body {
+        height:100vh;
+    }
 }

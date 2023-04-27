@@ -2,10 +2,11 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './Navbar.css'
 import { useState } from 'react'
+import Logo from '../Logo/Logo'
 
 
 function Navbar() {
-    const [collapse, setCollapse] = useState(false)
+    const [collapse, setCollapse] = useState(true)
     const NavbarItem = ({ text, to }) => {
         return (
             <Link className='navbartext' to={to}>
@@ -34,10 +35,11 @@ function Navbar() {
         <div>
             <div className='main'>
                 <div className='navbar'>
+                    {/* <Logo/> */}
                     <NavbarItem text='Home' to='/' />
                     <NavbarItem text='Login' to='/login' />
                     <NavbarItem text='Signup' to='/signup' />
-                    <NavbarItem text='Blog' to='/blog' />
+                    <NavbarItem text='Recents' to='/recents' />
                     <NavbarItem text='Contact Us' to='/contactus' />
                     <NavbarItem text='Membership' to='/membership' />
                     <nav className="nav">
@@ -63,7 +65,7 @@ function Navbar() {
                             <SidebarItem text='Home' to='/' />
                             <SidebarItem text='Login' to='/login' />
                             <SidebarItem text='Signup' to='/signup' />
-                            <SidebarItem text='Blog' to='/blog' />
+                            <SidebarItem text='Recents' to='/recents' />
                             <SidebarItem text='Contact Us' to='/contactus' />
                             <SidebarItem text='Membership' to='/membership' />
                             <nav className="nav">

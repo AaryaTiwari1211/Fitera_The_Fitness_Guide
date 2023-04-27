@@ -12,8 +12,9 @@ function Signup() {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [cpassword, setCPassword] = useState('')
-    const [error, setError] = useState(false)
+    const [error, setError1] = useState(false)
     const navigate = useNavigate()
+
     const handleUsername = (event) => {
         setUsername(event.target.value)
     }
@@ -22,7 +23,7 @@ function Signup() {
     }
     const handleSubmit = (event) => {
         if (username === '' || password === '' || firstname === '' || lastname === '' || phone === '' || email === '') {
-            setError(true)
+            setError1(true)
             event.preventDefault()
             return false;
         }
@@ -34,20 +35,20 @@ function Signup() {
     return (
         <div className='main-signup'>
             <h2 className='login-text'>Signup</h2>
-            <form method='post'>
+            <form method='post' className='signup-form'>
                 <div className='main-form'>
                     {error && <Message type='red' text='Please Fill All Fields' />}
                     <div className='main-name'>
-                        <input type="text" value={firstname} name="text" className="input" onChange={(event) => { setFirstname(event.target.value) }} placeholder="First Name" />
-                        <input type="text" value={lastname} name="text" className="input" onChange={(event) => { setLastname(event.target.value) }} placeholder="Last Name" />
+                        <input type="text" value={firstname} name="text" className="signup-input" onChange={(event) => { setFirstname(event.target.value) }} placeholder="First Name" />
+                        <input type="text" value={lastname} name="text" className="signup-input" onChange={(event) => { setLastname(event.target.value) }} placeholder="Last Name" />
                     </div>
                     <div className='main-name'>
-                        <input type="number" value={phone} name="text" className="input" onChange={(event) => { setPhone(event.target.value) }} placeholder="Phone" />
-                        <input type="email" value={email} name="text" className="input" onChange={(event) => { setEmail(event.target.value) }} placeholder="Email" />
+                        <input type="number" pattern="\d{10}" maxLength='10' value={phone} name="text" className="signup-input" onChange={(event) => { setPhone(event.target.value) }} placeholder="Phone" />
+                        <input type="email" value={email} name="text" className="signup-input" onChange={(event) => { setEmail(event.target.value) }} placeholder="Email" />
                     </div>
                     <div className='main-name'>
-                        <input type="text" value={username} name="text" className="input" onChange={handleUsername} placeholder="Username" />
-                        <input type="password" value={password} name="text" className="input" onChange={handlePassword} placeholder="Password" />
+                        <input type="text" value={username} name="text" className="signup-input" onChange={handleUsername} placeholder="Username" />
+                        <input type="password" value={password} name="text" className="signup-input" onChange={handlePassword} placeholder="Password" />
                     </div>
                     <Button text='Submit' click={handleSubmit} />
                     <h5>Already have an account??</h5>
