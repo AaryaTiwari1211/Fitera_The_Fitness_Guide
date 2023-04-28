@@ -19,7 +19,7 @@
 .text:hover {
     cursor: pointer;
     transition-duration: 0.5s;
-    transform: scale(1.2);
+    
 }
 
 @media screen and (max-width: 1024px) 

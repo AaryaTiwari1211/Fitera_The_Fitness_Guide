@@ -1,65 +1,77 @@
 .main-login {
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    margin: 75px;
-    justify-content: space-around;
-    background-color: white;
-    width: 30%;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 40px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  margin: 75px;
+  justify-content: space-around;
+  background-color: white;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 40px;
 }
 
 .login-text {
-    padding-top: 20px;
-    text-transform:uppercase;
+  padding-top: 20px;
+  text-transform: uppercase;
 }
 
 .main-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-form a {
+  box-shadow: inset 0 0 0 0 #54b3d6;
+  color: #54b3d6;
+  margin:10px;
+  padding: 0 0.25rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: #000;
+}
+
+.main-form a:hover {
+  box-shadow: inset 100px 0 0 0 #000;
+  color: white;
 }
 
 .right {
-    text-align: center;
+  text-align: center;
 }
-
 
 .login-input {
-    border: none;
-    outline: none;
-    border-radius: 8px;
-    margin:20px 16px;
-    padding: 1em;
-    background-color: #ccc;
-    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
-    transition: 300ms ease-in-out;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  margin: 20px 16px;
+  padding: 1em;
+  background-color: #ccc;
+  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
+  transition: 300ms ease-in-out;
 }
 
-.login-input:focus::placeholder{
-    color:#fff;
+.login-input:focus::placeholder {
+  color: #fff;
 }
 
 .login-input:focus {
-    color:white;
-    background-color: #1d417a;
-    transform: scale(1.05);
-    box-shadow: 13px 13px 100px #969696,
-                -13px -13px 100px #ffffff;
+  color: white;
+  background-color: #1d417a;
+  transform: scale(1.05);
+  box-shadow: 13px 13px 100px #969696, -13px -13px 100px #ffffff;
 }
 
 .signup-link {
-    margin-top: 10px;
-    margin-bottom: 30px;
-    font-size: smaller;
-    text-decoration: none;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: smaller;
+  text-decoration: none;
 }
 
-@media (max-width:900px)
-{
-    .main-login
-    {
-        width:50%;
-    }
+@media (max-width: 900px) {
+  .main-login {
+    width: 50%;
+  }
 }

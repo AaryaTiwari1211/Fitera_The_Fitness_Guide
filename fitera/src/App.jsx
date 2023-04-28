@@ -5,6 +5,7 @@ import Navbar from './components/Navbar/Navbar'
 import Home from '../src/pages/Home/Home'
 import ContactUs from './pages/ContactUs/ContactUs'
 import Login from '../src/pages/Login/Login'
+import Footer from './components/Footer/Footer'
 import Signup from '../src/pages/Signup/Signup'
 import Membership from './pages/Membership/Membership'
 import RecentCustomers from './pages/RecentCustomers/RecentCustomers'
@@ -26,9 +27,9 @@ function App() {
             <Route path='/membership' element={<Membership />} />
           </Routes>
         </div>
+        <Footer/>
       </div>
     </BrowserRouter>
-
   )
 }
 

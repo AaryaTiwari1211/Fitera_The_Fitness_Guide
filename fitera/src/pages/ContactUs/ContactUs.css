@@ -61,19 +61,21 @@
     transition: 300ms ease-in-out;
 }
 .contact-message:focus {
-    background-color: #24403cd1;
-    color:#caf8f3;
-    transform: scale(1.05);
-    box-shadow: 13px 13px 100px #969696,
-                -13px -13px 100px #ffffff;
+    background-color: #ffe6ff;
+    color:#660066;  
+
+    /* transform: scale(1.05); */
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .contact-input:focus::placeholder{
-    color:#fff;
+    /* color:#fff; */
+    color:#660066;  
 }
 
 .contact-message:focus::placeholder{
-    color:#fff;
+    /* color:#fff; */
+    color:#660066;
 }
 
 .contact-input {
@@ -82,17 +84,19 @@
     border-radius: 8px;
     margin:15px;
     padding: 1em;
-    background-color: #ccc;
+    background-color: #fff;
     box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
     transition: 300ms ease-in-out;
 }
 
 .contact-input:focus {
-    background-color: #24403df1;
-    color:#caf8f3;
-    transform: scale(1.05);
-    box-shadow: 13px 13px 100px #969696,
-                -13px -13px 100px #ffffff;
+    background-color: #b3ffff;
+    color:#660066;
+    /* transform: scale(1.01); */
+    /* border:1px solid black; */
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+
+    /* box-shadow: 13px 13px 100px #330033; */
 }
 
 .signup-link {
@@ -100,6 +104,12 @@
     margin-bottom: 30px;
     font-size: smaller;
     text-decoration: none;
+}
+
+.contact-map{
+    border:0;
+    width:300px;
+    height:250px;
 }
 
 @media (max-width:1200px)
@@ -114,4 +124,11 @@
         justify-content:center;
         align-items:center;
     }
+    .contact-map{
+        width:400px;
+        height:250px;
+    }
 }
+
+
+
