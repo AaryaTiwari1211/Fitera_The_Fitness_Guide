@@ -1,7 +1,6 @@
 
 
 .title {
-    width: 60%;
     letter-spacing: 1px;
     word-spacing: 2px;
     color: white;
@@ -10,6 +9,8 @@
     margin-right: auto;
     margin-top: 150px;
     text-transform: uppercase;
+    text-align: center;
+    font-size: 50px;
 }
 
 .title__alternate {
@@ -62,6 +63,7 @@
     text-align:center;
     font-size:35px;
     text-transform:uppercase;
+    text-align:center;
 }
 
 .about-us-subheading{
@@ -70,6 +72,7 @@
     font-size:20px;
     margin:20px;
     text-transform:uppercase;
+    text-align:center;
 }
 
 .about-us-heading{
@@ -78,18 +81,21 @@
     margin:30px;
     font-size:35px;
     text-transform:uppercase;
+    text-align:center;
 }
 .about-us-text1{
     font-family: 'Kanit', sans-serif;
     font-size:20px;
     margin:20px;
     text-transform:uppercase;
+    text-align:center;
 }
 .about-us-text2{
     font-family: 'Kanit', sans-serif;
     font-size:20px;
     margin:20px;
     text-transform:uppercase;
+    text-align:center;
 }
 
 .features{
@@ -110,8 +116,8 @@
     justify-content:center;
     align-items:center;
     border-radius:30px;
-    height:450px;
     margin:40px;
+    max-width:400px;
 }
 
 .feature-img{
@@ -134,6 +140,7 @@
     margin:15px 15px;
     font-size:18px;
     font-family:"Poppins" sans-serif;
+    text-align:center;
 }
 
 #about-us-heading{
