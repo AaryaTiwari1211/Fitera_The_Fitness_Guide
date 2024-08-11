@@ -54,10 +54,10 @@ function Home() {
             <div className='features'>
                 <h2 id='about-us-heading'>Discover what our gym has to offer</h2>
                 <div className='features-allgrid'>
-                    <Grid name="Cardio" img="../../../public/feature-grid1.jpeg" text="Fitera Gym India celebrates 20 th Anniversary this year. The gym community is getting stronger each year while taking forward the legacy in fitness." />
-                    <Grid id="features-pic2" name="Strength Training" img="../../../public/feature-grid2.jpg" text="Fitera gym is a focal point of fitness enthusiasts and body building professionals for all the right reasons. 
+                    <Grid name="Cardio" img="/feature-grid1.jpeg" text="Fitera Gym India celebrates 20 th Anniversary this year. The gym community is getting stronger each year while taking forward the legacy in fitness." />
+                    <Grid id="features-pic2" name="Strength Training" img="/feature-grid2.jpg" text="Fitera gym is a focal point of fitness enthusiasts and body building professionals for all the right reasons. 
                     Fitera gym membership offers extensive variety of amenities to train for every goal."/>
-                    <Grid name="GroupX" img="../../../public/feature-grid3.webp" text="Fitera gym membership offers an array of group workout activities weekly from guest 
+                    <Grid name="GroupX" img="/feature-grid3.webp" text="Fitera gym membership offers an array of group workout activities weekly from guest 
                     instructors/coaches with 10+ years of experience."/>
                 </div>
             </div>

@@ -20,10 +20,10 @@ function Membership() {
         <div className="membership">
             <h3 className='membership-heading'>Our Membership Plans</h3>
             <div className='member-allgrid'>
-                <MemberGrid name="Monthly" cost="RS 10,104" img="../../../public/monthly.avif" benefit1="+ Diet Meal Plan"/>
-                <MemberGrid name="Quarterly" cost="RS 20,104" img="../../../public/quarterly.avif" benefit1="+ Diet Meal Plan" benefit2="+ Personal Regimen"/>
-                <MemberGrid name="Yearly" cost="RS 50,104" img="../../../public/yearly.avif" benefit1="+ Diet Meal Plan" benefit2="+ Personal Regimen" benefit3="+ Personal Trainer"/>
-                <MemberGrid name="Lifetime" cost="RS 1,10,104" img="../../../public/lifetime.avif" benefit1="+ Diet Meal Plan" benefit2="+ Personal Regimen" benefit3="+ Personal Trainer"/>
+                <MemberGrid name="Monthly" cost="RS 10,104" img="/monthly.avif" benefit1="+ Diet Meal Plan"/>
+                <MemberGrid name="Quarterly" cost="RS 20,104" img="/quarterly.avif" benefit1="+ Diet Meal Plan" benefit2="+ Personal Regimen"/>
+                <MemberGrid name="Yearly" cost="RS 50,104" img="/yearly.avif" benefit1="+ Diet Meal Plan" benefit2="+ Personal Regimen" benefit3="+ Personal Trainer"/>
+                <MemberGrid name="Lifetime" cost="RS 1,10,104" img="/lifetime.avif" benefit1="+ Diet Meal Plan" benefit2="+ Personal Regimen" benefit3="+ Personal Trainer"/>
             </div>
         </div>
     )
